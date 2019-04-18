@@ -5,6 +5,15 @@
 ```
     FDCountdownButtonView *countDown = [[FDCountdownButtonView alloc]initWithFrame:CGRectMake(50, 100, 100, 50)];
     [countDown ableSelectButton]; 
-    countDown.delegate = self;
+    countDown.delegate = self;//FDCountdownDelegate
     [self.view addSubview:countDown];
 ```
+###  FDCountdownDelegate
+```
+-(void)beginSendNumberAction:(FDCountdownButtonView *)countDownView;//开始倒数回调
+```
+
+
+
+
+end
