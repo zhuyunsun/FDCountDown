@@ -6,16 +6,16 @@
 //  Copyright © 2017年 zhuyun. All rights reserved.
 //
 
-#import "FDCountdownButtonView.h"
+#import "FDCountdownView.h"
 #define RGBcolor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
-@interface FDCountdownButtonView ()
+@interface FDCountdownView ()
 @property(nonatomic,strong)NSTimer *timer;
 @property(nonatomic,assign)NSUInteger count;
 
 @property(nonatomic,assign)NumberType  sendType;
 @end
-@implementation FDCountdownButtonView
+@implementation FDCountdownView
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {

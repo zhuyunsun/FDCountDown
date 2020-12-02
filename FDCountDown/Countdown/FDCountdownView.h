@@ -12,7 +12,7 @@ typedef NS_ENUM(NSInteger,NumberType){
     NumberTypeEmail,
 };
 @protocol FDCountdownDelegate;
-@interface FDCountdownButtonView : UIView
+@interface FDCountdownView : UIView
 @property(nonatomic,strong)UILabel *wordsLabel;
 @property(nonatomic,strong)UIButton *countdownButton;
 @property(nonatomic,weak)id <FDCountdownDelegate>delegate;
@@ -43,6 +43,6 @@ typedef NS_ENUM(NSInteger,NumberType){
 
 @protocol FDCountdownDelegate<NSObject>
 @optional
--(void)beginSendNumberAction:(FDCountdownButtonView *)countDownView;
+-(void)beginSendNumberAction:(FDCountdownView *)countDownView;
 @end
 

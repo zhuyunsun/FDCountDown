@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "FDCountdownButtonView.h"
+#import "FDCountdownView.h"
 @interface ViewController ()<FDCountdownDelegate>
 
 @end
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    FDCountdownButtonView *countDown = [[FDCountdownButtonView alloc]initWithFrame:CGRectMake(50, 100, 100, 50)];
+    FDCountdownView *countDown = [[FDCountdownView alloc]initWithFrame:CGRectMake(50, 100, 100, 50)];
     [countDown ableSelectButton];
     countDown.delegate = self;
     [self.view addSubview:countDown];
@@ -25,7 +25,7 @@
     
 }
 #pragma delegate
--(void)beginSendNumberAction:(FDCountdownButtonView *)countDownView{
+-(void)beginSendNumberAction:(FDCountdownView *)countDownView{
     NSLog(@"开始倒数");
 }
 
